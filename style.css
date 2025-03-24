@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: whitesmoke;
+}
+
+.secao {
+    padding: 100px 0;
+    padding-left: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    margin-left: 25px;
+}
+
+ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #bbb;
+    font-weight: 500;
+    font-size: 18px;
+    transition: color 0.4s;
+}
+
+li a:hover {
+    color: green;
+}
+
+.principal {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    min-height: 75vh;
+}
+
+.principal h1 {
+    font-size: 80px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+    letter-spacing: -4px;
+}
+
+.principal h1 span {
+    color: green;
+}
+
+.principal p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 500px;
+    color: #bbb;
+}
+
+.botao {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.titulo-secao {
+    font-size: 45px;
+    margin-bottom: 65px;
+    position: relative;
+}
+
+.titulo-secao::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 100px;
+    height: 5px;
+    background-color: green;
+} 
+
+.grade-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card-projeto {
+    background-color: #161616;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img-projeto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.info-projeto {
+    padding: 20px;
+}
+
+.info-projeto h3 {
+    margin-bottom: 10px;
+}
+
+.info-projeto p {
+    color: #bbb;
+    margin-bottom: 15px;
+}
+
+.info-projeto a {
+    color: green;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.img-sobre {
+    height: 500px;
+    background-color: #161616;
+    border-radius: 15px;;
+}
+
+.info-sobre h2 {
+    margin-bottom: 35px;
+}
+
+.info-sobre p {
+    margin-bottom: 25px;
+    color: #bbb;
+}
+
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.tag-habilidades {
+    background-color: rgba(1, 184, 26, 0.2);
+    color: #4dfe79;
+    padding: 8px 15px;
+    border-radius: 25px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.botoes-contato {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.botao-contato {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 25px;
+    border-radius: 15px;
+    font-weight: 500;
+    min-width: 160px;
+    text-decoration: none;
+    color: white;
+}
+
+.whatsapp { background-color: #25D366; }
+
+.email { background-color: #EA4335; }
+ 
+.linkedin { background-color: #0077b5; }
+
+.github { background-color: #333; }
+
+footer {
+    padding: 25px 5%;
+    text-align: center;
+    border-top: 1px solid #222;
+}
+ 
+.efeito-cursor {
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out; 
+}
+
+.efeito-cursor:hover {
+    transform: translateY(-12px);
+}
+
+.cursor {
+    pointer-events: none;
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(1, 184, 26, 0.2);
+    z-index: 99;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media(max-width: 768px) {
+    
+    header {
+        padding: 15px;
+    }
+
+    ul {
+        gap: 20px;
+        justify-content: flex-start;
+    }
+
+    .secao {
+        padding: 60px 20px;
+    }
+
+    .sobre {
+        grid-template-columns: 1fr;
+    }
+
+    .img-sobre {
+        height: auto;
+    }
+}
