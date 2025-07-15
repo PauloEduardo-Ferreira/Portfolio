@@ -78,8 +78,7 @@ cd Portfolio
 
 Quer conversar ou dar um feedback?
 
-- [LinkedIn](https://www.linkedin.com/in/seu-perfil-aqui)
-- Email: seu.email@exemplo.com
+- [LinkedIn](https://www.linkedin.com/in/paulo-ferreira-dev/)
 
 ---
 
